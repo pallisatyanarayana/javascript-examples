@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sampleApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>angular data</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="lib/angular.min.js"></script>
+</head>
+<body>
+    
+    <div ng-controller="myController">
+
+
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>name</th>
+                <th>address</th>
+                <th>phno</th>
+
+                </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="employee in emp">
+
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.address}}</td>
+                        <td>{{employee.phno}}</td>
+
+                        </tr>
+                    </tbody>
+            </table>
+        
+
+        </div>
+
+       
+        <script src="js/index.js"></script>
+
+</body>
+</html>
